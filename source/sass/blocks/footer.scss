@@ -1,0 +1,259 @@
+.footer{
+    display: flex;
+    background: #041827;
+    width: 100%;
+    height: 380px;
+    justify-content: space-around;
+}
+.container_section{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+// ЛОГОТИП/МЕНЮ
+.container_footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.logo_footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.logo_title-footer{
+    color: #F2F5F6;
+    font-family: Roboto Condensed;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.logo_text-footer{
+    color: rgba(248, 253, 255, 0.70);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+// СОЦ,МЕРЕЖІ
+.social_networks{
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+}
+// РОЗДІЛ САЙТУ
+.section_site{
+    display: flex;
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+    letter-spacing: 0.75px;
+    text-transform: uppercase; 
+    margin-left: 38px;
+}
+.block_section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+// блоки
+.section_site-menu{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 160px;
+}
+.section_site-menu a{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: PT Mono;
+    font-size: 16px;
+    font-style: normal;
+}
+// КОНТАКТИ/ОФІС
+.block_office-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our_office{
+    display: flex;
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.office_menu{
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+}
+.office_menu a{
+    display: flex;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: PT Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    padding: 10px;
+}
+
+// ДОДАТКОВО ДЛЯ МОБІЛЬНОЇ ВЕРСІЇ
+.line{
+    height: 1px;
+    background: rgba(248, 253, 255, 0.70);
+    display: none;
+  }
+  .line_site{
+    height: 1px;
+    background: rgba(248, 253, 255, 0.70);
+    display: none;
+  }
+  .line_office{
+    width: 100%;
+    height: 1px;
+    background: rgba(248, 253, 255, 0.70);
+    display: none;
+  }
+  .plus_menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .plus{
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    color: #FFF;
+    display: none;
+  }
+  .office_minus{
+    display: flex;
+    flex-direction: row;
+  }
+  .minus{
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    color: #FFF;
+    display: none;
+    align-items: center;
+  }
+  .block_office-menu{
+   display: flex;
+  }
+
+
+
+@media  (max-width: 1200px) {
+.section_site-menu{
+    flex-wrap: nowrap;
+    width: 200px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+}
+.logo_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.social_networks{
+    display: flex;
+    gap: 25px;
+}
+.container_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 240px;
+}
+}
+
+
+
+
+
+@media  (max-width: 770px) {
+.section_site-menu{
+    display: none;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.logo_footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 240px;
+}
+.social_networks{
+    justify-content: center;
+}
+.container_footer{
+    justify-content: center;
+}
+.section_site-menu{
+    display: flex;
+    flex-direction: column;
+}
+.container_section{
+    display: flex;
+    flex-direction: column;
+}
+.section_site-menu{
+    display: none;
+}
+.block_office-menu{
+    display: flex;
+}
+.plus_menu{
+    justify-content: center;
+    gap: 130px;
+}
+.office_minus{
+    align-items: center;
+    gap: 160px;
+    margin-left: 45px;
+}
+.office_menu{
+    margin-right: 105px;
+}
+
+
+.line_office{
+    display: flex;
+}
+.line{
+    display: flex;
+}
+.line_site{
+    display: flex;
+}
+.plus{
+    display: flex;
+}
+.minus{
+    display: flex;
+}
+  
+}
